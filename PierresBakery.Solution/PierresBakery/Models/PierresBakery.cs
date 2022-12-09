@@ -52,6 +52,16 @@ namespace PierresBakery.Models
       return (groupsOfThree * 5) + (remainder * 2);
     }
 
+    public string PastryOrPastries()
+    {
+      if (NumberOfPastry == 1)
+      {
+        return "pastry";
+      }
+      else
+      {
+        return "pastries";
+      }
+    }
   }
-
 }

@@ -172,7 +172,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result);
 
       Pastry newPastryOrder2 = new Pastry(2);
-      string expected2 = "pastry";
+      string expected2 = "pastries";
       string result2 = newPastryOrder2.PastryOrPastries(); 
       Assert.AreEqual(expected2, result2); 
     }    
