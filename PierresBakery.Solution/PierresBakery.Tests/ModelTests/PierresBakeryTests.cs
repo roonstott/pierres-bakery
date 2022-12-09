@@ -112,7 +112,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result); 
     }
 
-    [TestMethod]
+    [TestMethod] //10
     public void ComputePrice_ReturnsCostOfThreePastries_Int()
     {
       Pastry newPastryOrder = new Pastry(3);
