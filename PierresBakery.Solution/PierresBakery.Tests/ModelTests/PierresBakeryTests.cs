@@ -38,6 +38,16 @@ namespace PierresBakery.Tests
       Pastry newPastryOrder = new Pastry(4);
       Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
     }
+
+    [TestMethod]
+
+    public void GetNumberOfPastry_ReturnsNumberOfPastry_int()
+    {
+      Pastry newPastryOrder = new Pastry(4);
+      int expected = 4;
+      int result = newPastryOrder.NumberOfPastry;
+      Assert.AreEqual(expected, result);
+    }
     
   }
 
