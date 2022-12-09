@@ -161,7 +161,20 @@ namespace PierresBakery.Tests
       int result7 = newPastryOrder7.ComputePrice(); 
       Assert.AreEqual(expected7, result7); 
     }
-    
-  }
 
+    [TestMethod] //13
+
+    public void PastryOrPastries_MakesPastryWordMatchQuantity_String()
+    {
+      Pastry newPastryOrder = new Pastry(1);
+      string expected = "pastry";
+      string result = newPastryOrder.PastryOrPastries(); 
+      Assert.AreEqual(expected, result);
+
+      Pastry newPastryOrder2 = new Pastry(2);
+      string expected2 = "pastry";
+      string result2 = newPastryOrder2.PastryOrPastries(); 
+      Assert.AreEqual(expected2, result2); 
+    }    
+  }
 }
