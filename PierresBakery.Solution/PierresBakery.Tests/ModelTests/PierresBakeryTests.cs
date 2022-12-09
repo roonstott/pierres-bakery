@@ -26,6 +26,16 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result);
     }
 
+    [TestMethod]
+
+    public void ComputePrice_ReturnsCostOfFirstLoaf_Int()
+    {
+      Bread newBreadOrder = new Bread(1);
+      int expected = 5;
+      int result = newBreadOrder.ComputePrice();
+      Assert.AreEqual(expected, result);
+    }
+
   }
 
   [TestClass]
