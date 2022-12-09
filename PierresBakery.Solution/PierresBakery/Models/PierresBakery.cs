@@ -7,7 +7,7 @@ namespace PierresBakery.Models
   public class Bread
   {
     
-    public int NumberOfBread { get; }
+    public int NumberOfBread { get; set; }
 
     public Bread( int numberOfBread ) 
 
@@ -39,7 +39,7 @@ namespace PierresBakery.Models
   public class Pastry
   {
 
-    public int NumberOfPastry { get; }
+    public int NumberOfPastry { get; set; }
     public Pastry ( int numberOfPastry)
     {
       NumberOfPastry = numberOfPastry;

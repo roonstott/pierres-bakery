@@ -17,6 +17,20 @@ namespace Interface
         Bread breadOrder = new Bread(order[0]);
         Pastry pastryOrder = new Pastry(order[1]);
         Program.PrintOrder(breadOrder, pastryOrder);
+        string keepGoing = "y";
+        while (keepGoing == "y")
+        {
+        Console.WriteLine("See what a great value we offer?? Would you like to add more items to your order? [Y] Or would you like to finish and checkout? [N] ");
+        keepGoing = Console.ReadLine().ToLower();
+        if (keepGoing == "y")
+          {
+            int[] changeOrder = Program.TakeOrder();
+            breadOrder.NumberOfBread += changeOrder[0];
+            pastryOrder.NumberOfPastry += changeOrder[1];
+            Program.PrintOrder(breadOrder, pastryOrder);
+          }
+        }
+        Program.PrintOrder(breadOrder, pastryOrder);        
       }
       else
       {
