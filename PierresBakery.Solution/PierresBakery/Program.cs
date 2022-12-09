@@ -35,23 +35,5 @@ namespace Interface
       Pastry pastryOrder = new Pastry(pastries);
     }
 
-    // public static void PrintOrder()
-    // { 
-    //   int breadQuant = breadOrder
-    //   string breadWord = " loaves"; 
-    //   string pastryWord = " pastries";
-    //   string breadWordQuant = Program.Order["bread"].ToString();  
-    //   string pastryWordQuant = Program.Order["pastries"].ToString();  
-
-    //   if (Program.Order["bread"] == 1)
-    //   {
-    //     breadWord = " loaf"; 
-    //   }
-    //   if (Program.Order["pastries"] == 1)
-    //   {
-    //     pastryWord = " pastry";
-    //   }
-    //   Console.WriteLine("You have ordered " + breadQuant + breadWord + " of bread and " + pastryQuant + pastryWord);
-    // }    
   }
 }

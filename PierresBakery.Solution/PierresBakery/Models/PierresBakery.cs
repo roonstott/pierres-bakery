@@ -22,6 +22,18 @@ namespace PierresBakery.Models
       return (groupsOfThree * 10) + (remainder * 5);
     }
 
+    public string LoafOrLoaves()
+    {
+      if (NumberOfBread == 1)
+      {
+        return "loaf";
+      }
+      else
+      {
+        return "loaves";
+      }
+    }
+
   }
 
   public class Pastry

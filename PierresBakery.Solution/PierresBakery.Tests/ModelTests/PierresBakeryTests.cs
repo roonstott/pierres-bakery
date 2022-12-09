@@ -87,7 +87,10 @@ namespace PierresBakery.Tests
         Bread newBreadOrder = new Bread(1);
         string expected = "loaf";
         string result = newBreadOrder.LoafOrLoaves();
+        Assert.AreEqual(expected, result);
       }
+
+      []
    
 
   }
