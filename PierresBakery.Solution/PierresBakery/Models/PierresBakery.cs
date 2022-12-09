@@ -33,6 +33,11 @@ namespace PierresBakery.Models
       NumberOfPastry = numberOfPastry;
     }
 
+    public int ComputePrice() 
+    {
+      return NumberOfPastry * 2;
+    }
+
   }
 
 }
