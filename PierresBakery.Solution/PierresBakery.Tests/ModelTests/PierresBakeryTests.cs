@@ -145,7 +145,6 @@ namespace PierresBakery.Tests
       int result7 = newPastryOrder7.ComputePrice(); 
       Assert.AreEqual(expected7, result7); 
     }
-
     
   }
 
