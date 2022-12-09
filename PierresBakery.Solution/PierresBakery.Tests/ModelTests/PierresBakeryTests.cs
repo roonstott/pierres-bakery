@@ -32,13 +32,13 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
     [TestMethod]
+    
+    public void PastryClassConstructor_MakesInstanceOfPastryClass_TypeClass()
     {
-      public void PastryClassConstructor_MakesInstanceOfPastryClass_TypeClass()
-      {
-        Pastry newPastryOrder = new Pastry(4);
-        Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
-      }
+      Pastry newPastryOrder = new Pastry(4);
+      Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
     }
+    
   }
 
 }
