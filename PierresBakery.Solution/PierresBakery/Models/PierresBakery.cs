@@ -15,6 +15,10 @@ namespace PierresBakery.Models
       NumberOfBread = numberOfBread;
     }
 
+    public int ComputePrice() 
+    {
+      return NumberOfBread * 5;
+    }
 
   }
 
