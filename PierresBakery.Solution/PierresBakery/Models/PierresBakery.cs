@@ -35,7 +35,9 @@ namespace PierresBakery.Models
 
     public int ComputePrice() 
     {
-      return NumberOfPastry * 2;
+      int remainder = NumberOfPastry % 3;
+      int groupsOfThree = (NumberOfPastry-remainder)/3;
+      return (groupsOfThree * 5) + (remainder * 2);
     }
 
   }
