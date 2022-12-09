@@ -36,6 +36,16 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result);
     }
 
+    [TestMethod]
+
+    public void ComputePrice_ReturnsCostOfSecondLoaf_Int()
+    {
+      Bread newBreadOrder = new Bread(2);
+      int expected = 10;
+      int result = newBreadOrder.ComputePrice();
+      Assert.AreEqual(expected, result);
+    }
+
   }
 
   [TestClass]
@@ -58,6 +68,7 @@ namespace PierresBakery.Tests
       int result = newPastryOrder.NumberOfPastry;
       Assert.AreEqual(expected, result);
     }
+    
     
   }
 
