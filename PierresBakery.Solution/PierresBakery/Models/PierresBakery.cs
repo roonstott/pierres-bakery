@@ -17,7 +17,9 @@ namespace PierresBakery.Models
 
     public int ComputePrice() 
     {
-      return NumberOfBread * 5;
+      int remainder = NumberOfBread % 3;
+      int groupsOfThree = (NumberOfBread-remainder)/3;
+      return (groupsOfThree * 10) + (remainder * 5);
     }
 
   }
