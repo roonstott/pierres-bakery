@@ -79,12 +79,23 @@ namespace PierresBakery.Tests
       int result7 = newBreadOrder7.ComputePrice(); 
       Assert.AreEqual(expected7, result7); 
     }
+
+    [TestMethod] //7
+    
+      public void LoafOrLoaves_MakesBreadWordMatchQuantity_string()
+      {
+        Bread newBreadOrder = new Bread(1);
+        string expected = "loaf";
+        string result = newBreadOrder.LoafOrLoaves();
+      }
+   
+
   }
 
   [TestClass]
   public class PastryTests
   {
-    [TestMethod] //7
+    [TestMethod] //8
     
     public void PastryClassConstructor_MakesInstanceOfPastryClass_TypeClass()
     {
@@ -92,7 +103,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
     }
 
-    [TestMethod] //8
+    [TestMethod] //9
 
     public void GetNumberOfPastry_ReturnsNumberOfPastry_int()
     {
@@ -102,7 +113,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result);
     }
 
-    [TestMethod] //9
+    [TestMethod] //10
 
     public void ComputePrice_ReturnsCostOfFirstPastry_Int()
     {
@@ -112,7 +123,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result); 
     }
 
-    [TestMethod] //10
+    [TestMethod] //11
     public void ComputePrice_ReturnsCostOfThreePastries_Int()
     {
       Pastry newPastryOrder = new Pastry(3);
@@ -121,7 +132,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(expected, result); 
     }
 
-    [TestMethod] //11
+    [TestMethod] //12
     
     public void ComputePrice_ReturnsCostOfSeveralDifferentPastryQuantities_Int()
     {
