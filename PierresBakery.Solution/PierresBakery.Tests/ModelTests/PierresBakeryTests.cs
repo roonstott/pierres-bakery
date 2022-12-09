@@ -120,6 +120,32 @@ namespace PierresBakery.Tests
       int result = newPastryOrder.ComputePrice(); 
       Assert.AreEqual(expected, result); 
     }
+
+    [TestMethod] //11
+    
+    public void ComputePrice_ReturnsCostOfSeveralDifferentPastryQuantities_Int()
+    {
+      Pastry newPastryOrder4 = new Pastry(4);
+      int expected4 = 7;
+      int result4 = newPastryOrder4.ComputePrice(); 
+      Assert.AreEqual(expected4, result4); 
+
+      Pastry newPastryOrder5 = new Pastry(5);
+      int expected5 = 9;
+      int result5 = newPastryOrder5.ComputePrice(); 
+      Assert.AreEqual(expected5, result5); 
+
+      Pastry newPastryOrder6 = new Pastry(6);
+      int expected6 = 10;
+      int result6 = newPastryOrder6.ComputePrice(); 
+      Assert.AreEqual(expected6, result6); 
+
+      Pastry newPastryOrder7 = new Pastry(7);
+      int expected7 = 12;
+      int result7 = newPastryOrder7.ComputePrice(); 
+      Assert.AreEqual(expected7, result7); 
+    }
+
     
   }
 
