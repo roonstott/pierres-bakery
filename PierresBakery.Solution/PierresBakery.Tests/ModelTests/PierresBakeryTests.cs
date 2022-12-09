@@ -25,13 +25,20 @@ namespace PierresBakery.Tests
       int result = newBreadOrder.NumberOfBread;
       Assert.AreEqual(expected, result);
     }
-    
+
   }
 
   [TestClass]
   public class PastryTests
   {
-    // Test methods go here
+    [TestMethod]
+    {
+      public void PastryClassConstructor_MakesInstanceOfPastryClass_TypeClass()
+      {
+        Pastry newPastryOrder = new Pastry(4);
+        Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
+      }
+    }
   }
 
 }
