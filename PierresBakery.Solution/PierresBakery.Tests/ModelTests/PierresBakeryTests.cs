@@ -82,17 +82,19 @@ namespace PierresBakery.Tests
 
     [TestMethod] //7
     
-      public void LoafOrLoaves_MakesBreadWordMatchQuantity_string()
-      {
-        Bread newBreadOrder = new Bread(1);
-        string expected = "loaf";
-        string result = newBreadOrder.LoafOrLoaves();
-        Assert.AreEqual(expected, result);
-      }
+    public void LoafOrLoaves_MakesBreadWordMatchQuantity_string()
+    {
+      Bread newBreadOrder = new Bread(1);
+      string expected = "loaf";
+      string result = newBreadOrder.LoafOrLoaves();
+      Assert.AreEqual(expected, result);
 
-      []
+      Bread newBreadOrder2 = new Bread(2);
+      string expected2 = "loaves";
+      string result2 = newBreadOrder2.LoafOrLoaves();
+      Assert.AreEqual(expected2, result2);
+    }
    
-
   }
 
   [TestClass]
