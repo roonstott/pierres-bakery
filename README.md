@@ -19,11 +19,16 @@ _This program is run entirely in the console using the dotnet developer platform
 
 * _Clone this repository to your own machine_
 * _If you do not have dotnet installed on your machine, you must do so in order to run this program (https://dotnet.microsoft.com/en-us/download)_
-* _Navigate to the PierresBakery.Solution/PierresBakery directory_
-  `$ cd PierresBakery.Solution/PierresBakery/`
+* _Navigate to the PierresBakery directory_
+  `$ cd PierresBakery/`
 * _Run the program using the dotnet run command_
   `$ dotnet run`
 * _Follow the prompts, entering yes or no when prompted, and entering integer quantities for the pasry items that you want to add to your order_
+* _To test, navigate to the PierresBakery.Tests directory_
+  `$ cd ../PierresBakery.Tests`
+* _Enter the dotnet test command_
+    `$ dotnet test`
+* _The test results will be printed to the console_
 
 ## Known Bugs
 
