@@ -24,8 +24,10 @@ _This program is run entirely in the console using the dotnet developer platform
 * _Run the program using the dotnet run command_
   `$ dotnet run`
 * _Follow the prompts, entering yes or no when prompted, and entering integer quantities for the pasry items that you want to add to your order_
-* _To test, navigate to the PierresBakery.Tests directory_
-  `$ cd ../PierresBakery.Tests`
+* _To test, navigate to the PierresSales.Tests directory_
+  `$ cd ../PierresSales.Tests`
+* _Enter the dotnet restore command_
+   `$ dotnet restore`
 * _Enter the dotnet test command_
     `$ dotnet test`
 * _The test results will be printed to the console_
